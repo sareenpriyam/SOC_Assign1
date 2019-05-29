@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index_5</title>
+	<script type="text/javascript">
+		function gotoURL(){
+			var data = document.getElementById('txt1').value;
+			document.getElementById('if1').src = data;
+		}
+		function resize(){
+			var wth = document.getElementById('txt2').value;
+			var hght = document.getElementById('txt3').value;
+			document.getElementById('if1').style.width = wth + "px";
+			document.getElementById('if1').style.height = hght + "px";
+		}
+	</script>
+</head>
+<body>
+	<h1 align="center">My window</h1>
+	<div id="root">
+		<div id = 'root1'>
+			<iframe id = "if1" src="https://www.google.com/webhp?igu=1" class="frame-area"></iframe>
+		</div>
+		<div id="root2">
+			<input type="text" id="txt1" value="https://">
+			<input type="button" id = 'b1' value="GO" onclick="gotoURL()">
+			<br><br>
+			Width<input type="text" id = "txt2" value = "" >
+			Height<input type="text" id="txt3" value="">
+			<input type="button" value="Re-size" id="b2" onclick="resize()">
+		</div>
+		
+	</div>
+</body>
+</html>
