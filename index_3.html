@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+        <script>
+            function changesrc1(){
+                document.getElementById("if1").src="https://wikipedia.org/" 
+
+            }
+            function changesrc2(){
+                document.getElementById("if1").src="https://iitk.ac.in" 
+
+            }
+            function changesrc3(){
+                document.getElementById("if1").src="https://iitd.ac.in" 
+
+            }
+
+        </script>
+    </head>
+    <body>
+        <h1 align="center">my first sub window </h1>
+        <div >
+            <div align="center" >
+               <h3>
+                    <div align="center">
+                            <iframe id ="if1" src="" class="">
+            
+                            </iframe>
+            
+                        </div>
+
+                   <input type="button" id="b1" value ="Wikipedia" onclick="changesrc1()">
+                   <input type="button" id="b2" value ="IITK" onclick="changesrc2()">
+                   <input type="button" id="b3" value ="IITD" onclick="changesrc3()">
+               </h3> 
+            </div>
+            
+        </div>
+    </body>
+</html>
